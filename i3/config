@@ -46,8 +46,6 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
-#Scrolling touchpad inverted by default change by this lines 
- exec_always --no-startup-id xinput set-prop "VEN_04F3:00 04F3:3259 Touchpad" "libinput Natural Scrolling Enabled" 1
 
 
 # start a terminal
