@@ -1,89 +1,49 @@
-
 [font]
 normal = {family = "JetBrainsMono Nerd Font", style= "Regular"}
-
-
 bold = {family = "JetBrainsMono Nerd Font", style= "Bold"}
 italic = {family = "JetBrainsMono Nerd Font", style= "Italic"}
-size = 17
-
+size = 20
 
 [mouse]
 hide_when_typing = true
 
 [window]
-  padding.x = 0
-  padding.y = 1 
-  opacity = 1.0
+padding.x = 0
+padding.y = 0
+opacity = 0.90
 
+[colors]
+draw_bold_text_with_bright_colors = true
 
- [colors.primary]
- foreground = "#FFFFFF"
- background = "#000000"
- bright_foreground = "#e0def4"
+[colors.primary]
+background = "#12131a"
+foreground = "#c8d3f5"
+bright_foreground = "#ffffff"
 
- [colors.cursor]
- text = "#161616"
-   cursor = "#66D9EF"
+[colors.cursor]
+cursor = "#c8d3f5"
+text = "#12131a"
 
- [colors.vi_mode_cursor]
- text = "#e0def4"
- cursor = "#56526e"
+[colors.selection]
+background = "#1f2333"
+text = "#ffffff"
 
- [colors.search.matches]
- foreground = "#908caa"
- background = "#393552"
+[colors.normal]
+black   = "#15161e"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#c8d3f5"
 
- [colors.search.focused_match]
- foreground = "#232136"
- background = "#ea9a97"
-
- [colors.hints.start]
- foreground = "#908caa"
- background = "#2a273f"
-
- [colors.hints.end]
- foreground = "#6e6a86"
- background = "#2a273f"
-
- [colors.line_indicator]
- foreground = "None"
- background = "None"
-
- [colors.footer_bar]
- foreground = "#e0def4"
- background = "#2a273f"
-
- [colors.selection]
- text = "#e0def4"
- background = "#44415a"
-
- [colors.normal]
- black = "#000000"
- red = "#F92672"
- green = "#A6E22E"
- yellow = "#FD971F"
- blue = "#66D9EF"
- magenta = "#BD93F9"
- cyan = "#8BE9FD"
- white = "#F8F8F2"
-
- [colors.bright]
- black = "#6e6a86"
- red = "#eb6f92"
- green = "#3e8fb0"
- yellow = "#f6c177"
- blue = "#9ccfd8"
- magenta = "#c4a7e7"
- cyan = "#ea9a97"
- white = "#e0def4"
-
- [colors.dim]
- black = "#6e6a86"
- red = "#eb6f92"
- green = "#3e8fb0"
- yellow = "#f6c177"
- blue = "#9ccfd8"
- magenta = "#c4a7e7"
- cyan = "#ea9a97"
- white = "#e0def4"
+[colors.bright]
+black   = "#363b54"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#f7c67f"
+blue    = "#b4d4f1"
+magenta = "#d5aefb"
+cyan    = "#a5dfff"
+white   = "#ffffff"
