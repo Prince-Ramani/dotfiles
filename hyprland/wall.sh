@@ -1,7 +1,6 @@
-
 #!/bin/bash
 
-wallpapers=(/usr/share/backgrounds/archlinux/*)
+wallpapers=(/usr/share/backgrounds/wallpapers/*)
 
 len=${#wallpapers[@]}
 
@@ -19,4 +18,3 @@ then
 else
     hyprpaper &
 fi
-
