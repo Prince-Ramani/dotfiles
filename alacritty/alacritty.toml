@@ -1,8 +1,9 @@
 [font]
-normal = {family = "JetBrainsMono Nerd Font", style= "Regular"}
-bold = {family = "JetBrainsMono Nerd Font", style= "Bold"}
-italic = {family = "JetBrainsMono Nerd Font", style= "Italic"}
-size = 20
+normal = { family = "Iosevka Nerd Font", style = "Regular" }
+bold = { family = "Iosevka Nerd Font", style = "Bold" }
+italic = { family = "Iosevka Nerd Font", style = "Italic" }
+bold_italic = { family = "Iosevka Nerd Font", style = "Bold Italic" }
+size = 25
 
 [mouse]
 hide_when_typing = true
@@ -11,39 +12,48 @@ hide_when_typing = true
 padding.x = 0
 padding.y = 0
 opacity = 1.0
+dynamic_padding = false
+decorations = "none"
 
-[colors]
-draw_bold_text_with_bright_colors = true
+[cursor]
+style = { shape = "Block", blinking = "Off" }
 
 [colors.primary]
-background = "#000000"    
-foreground = "#FCFFF7"   
-bright_foreground = "#FFFFFF"
-
-[colors.cursor]
-cursor = "#FFD54F"      
-text = "#000000"        
-
-[colors.selection]
-background = "#3A5F8A"    
-text = "#FCFFF7"          
+background = "#070707"
+foreground = "#f7f7f7"
 
 [colors.normal]
-black   = "#1e1e1e"       
-red     = "#FF6767"       
-green   = "#87af5f"       
-yellow  = "#FFD54F"       
-blue    = "#58A0C8"       
-magenta = "#7A7A7A"       
-cyan    = "#4FC1FF"       
-white   = "#FCFFF7"       
+black   = "#070707"
+red     = "#ff5f5f"
+green   = "#9a9a9a"
+yellow  = "#ffaf5f"
+blue    = "#79a8ff"
+magenta = "#E39695"
+cyan    = "#5fafff"
+white   = "#f7f7f7"
 
 [colors.bright]
-black   = "#767676"       
-red     = "#FF8787"       
-green   = "#9ece6a"       
-yellow  = "#F7C67F"       
-blue    = "#0496FF"       
-magenta = "#D49A1A"       
-cyan    = "#A5DFFF"       
-white   = "#FFFFFF"       
+black   = "#444444"
+red     = "#ff5f5f"
+green   = "#9a9a9a"
+yellow  = "#ffaf5f"
+blue    = "#79a8ff"
+magenta = "#E39695"
+cyan    = "#5fafff"
+white   = "#ffffff"
+
+[colors.cursor]
+cursor = "#f7f7f7"
+text   = "#070707"
+
+[colors.selection]
+background = "#222222"
+text = "#f7f7f7"
+
+[colors.search.matches]
+background = "#303030"
+foreground = "#f7f7f7"
+
+[colors.search.focused_match]
+background = "#404040"
+foreground = "#ffffff"
