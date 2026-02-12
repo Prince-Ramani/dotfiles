@@ -48,7 +48,7 @@ if [ -n "$selected" ]; then
 
     if [ -n "$original_path" ]; then
         echo $original_path
-        /home/prince/.config/hypr/utils/wall.sh "$original_path"
+        /home/username/.config/hypr/utils/wall.sh "$original_path"
 
 
         notify-send "Wallpaper" "Wallpaper has been updated" -i "$original_path"

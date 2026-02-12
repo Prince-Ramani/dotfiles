@@ -1,0 +1,14 @@
+#window {
+  background-color: #161616;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+#outer-box {
+  padding: 10px;
+  background-color: #161616;
+}
+
+#entry:selected {
+  background-color: blue;
+}

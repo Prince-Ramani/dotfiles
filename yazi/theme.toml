@@ -1,0 +1,87 @@
+
+
+[ui]
+window.padding.x = 10
+window.padding.y = 3
+window.opacity = 1
+window.decorations = "none"
+window.dynamic_padding = false
+
+font.normal = { family = "Iosevka Nerd Font", style = "Regular" }
+font.bold = { family = "Iosevka Nerd Font", style = "Bold" }
+font.italic = { family = "Iosevka Nerd Font", style = "Italic" }
+font.bold_italic = { family = "Iosevka Nerd Font", style = "Bold Italic" }
+font.size = 23
+
+[mouse]
+hide_when_typing = true
+
+[colors.primary]
+background = "#161616"
+foreground = "#f7f7f7"
+
+[colors.cursor]
+text = "#161616"
+cursor = "#dcdcdc"
+
+[colors.selection]
+text = "#f7f7f7"
+background = "#252525"
+
+[colors.normal]
+black = "#161616"
+red = "#ff5f5f"
+green = "#D1F0B1"
+yellow = "#ffaf5f"
+blue = "#5fafff"
+magenta = "#E39695"
+cyan = "#A9D3FF"
+white = "#f7f7f7"
+
+[colors.bright]
+black = "#444444"
+red = "#ff8080"
+green = "#e1f7c9"
+yellow = "#ffd29a"
+blue = "#8fc4ff"
+magenta = "#f0b2b1"
+cyan = "#c3e1ff"
+white = "#ffffff"
+
+[colors.dim]
+black = "#1f1f1f"
+red = "#cc4b4b"
+green = "#a8c796"
+yellow = "#cc8c4b"
+blue = "#4b86cc"
+magenta = "#b36a69"
+cyan = "#7fa6cc"
+white = "#9a9a9a"
+
+[filesystem]
+show_hidden_files = false  
+default_view = "grid"      
+
+[sorting]
+sort_by = "name"           
+sort_order = "ascending"   
+
+[keybindings]
+up = "k"
+down = "j"
+left = "h"
+right = "l"
+open_file = "enter"
+open_file_preview = "space"
+exit = "q"
+
+[behavior]
+delete_confirmation = true 
+move_confirmation = true   
+copy_confirmation = true   
+highlight_current_dir = true
+
+[status_bar]
+show_path = true
+show_size = true
+show_modified_time = true
