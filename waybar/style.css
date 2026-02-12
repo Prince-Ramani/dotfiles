@@ -1,59 +1,80 @@
 * {
-  font-family:
-    JetBrainsMono Nerd Font Mono,
-    monospace;
-  font-size: 12px;
-  color: #ffffff;
+  font-family: "Iosevka Nerd Font", monospace;
+  font-size: 16px;
 }
 
 #waybar {
-  background-color: rgba(0, 0, 0, 1);
+  background: transparent;
+  border-radius: 10px;
+  padding: 4px 10px;
 }
 
-#workspaces button.active {
-  background-color: transparent;
-  border-bottom: 2px solid blue;
+.module {
+  padding: 2px 10px;
+  margin: 4px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+#workspaces {
+  background: #161616;
+  color: #ffffff;
+  padding: 0px 0px;
+}
+
+#workspaces .active {
+  background: #5fafff;
+  color: #161616;
+  font-weight: bold;
+}
+
+#workspaces button {
+  background: #161616;
+  color: #777777;
+  font-weight: bold;
+}
+
+#clock {
+  color: #f7f7f7;
+  background: #161616;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-left: 60px;
 }
 
 #cpu {
-  color: #66ff66;
+  background: #161616;
+  color: #e39695;
 }
 
-#battery.warning {
-  color: orange;
-  font-weight: bold;
-}
-#battery.critical {
-  color: white;
-  background-color: red;
-  font-weight: bolder;
+#memory {
+  background: #161616;
+  color: #d1f0b1;
 }
 
-#battery.charging {
-  background-color: purple;
-  font-weight: bolder;
+#network {
+  background: #161616;
+  color: #a9d3ff;
 }
 
-#cpu.warning {
-  color: black;
-  background: orange;
-}
-#cpu.critical {
-  color: white;
-  background: red;
+#pulseaudio {
+  background: #161616;
+  color: #5fafff;
 }
 
-#memory.warning {
-  background: orange;
+#battery {
+  background: #161616;
+  color: #ffaf5f;
 }
-#memory.critical {
-  color: white;
-  background: red;
+
+.separator {
+  color: #444444;
 }
-#battery,
-#cpu,
-#memory,
-#network,
-#clock {
-  padding: 0 10px;
+
+#tooltip {
+  background: #161616;
+  color: #f7f7f7;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
 }
