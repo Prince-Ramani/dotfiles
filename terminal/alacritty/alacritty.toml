@@ -3,56 +3,42 @@ normal = { family = "Iosevka Nerd Font", style = "Regular" }
 bold = { family = "Iosevka Nerd Font", style = "Bold" }
 italic = { family = "Iosevka Nerd Font", style = "Italic" }
 bold_italic = { family = "Iosevka Nerd Font", style = "Bold Italic" }
-size = 23
+size = 25
 
 [mouse]
 hide_when_typing = true
 
 [window]
-padding.x = 10
-padding.y = 3
+padding.x = 0
+padding.y = 0
 opacity = 1
 dynamic_padding = false
 decorations = "none"
 
 [colors.primary]
-background = "#161616"
-foreground = "#f7f7f7"
+background = '#000000'
+foreground = '#CECECE'
 
 [colors.cursor]
-text   = "#161616"
-cursor = "#dcdcdc"
-
-[colors.selection]
-text       = "#f7f7f7"
-background = "#252525"
+text = '#0E1415'
+cursor = '#CECECE'
 
 [colors.normal]
-black   = "#161616"
-red     = "#ff5f5f"
-green   = "#D1F0B1"
-yellow  = "#ffaf5f"
-blue    = "#5fafff"
-magenta = "#E39695"
-cyan    = "#A9D3FF"
-white   = "#f7f7f7"
+black = '#0E1415'
+red = '#e25d56'
+green = '#73ca50'
+yellow = '#e9bf57'
+blue = '#4a88e4'
+magenta = '#915caf'
+cyan = '#23acdd'
+white = '#f0f0f0'
 
 [colors.bright]
-black   = "#444444"
-red     = "#ff8080"
-green   = "#e1f7c9"
-yellow  = "#ffd29a"
-blue    = "#8fc4ff"
-magenta = "#f0b2b1"
-cyan    = "#c3e1ff"
-white   = "#ffffff"
-
-[colors.dim]
-black   = "#1f1f1f"
-red     = "#cc4b4b"
-green   = "#a8c796"
-yellow  = "#cc8c4b"
-blue    = "#4b86cc"
-magenta = "#b36a69"
-cyan    = "#7fa6cc"
-white   = "#9a9a9a"
+black = '#777777'
+red = '#f36868'
+green = '#88db3f'
+yellow = '#f0bf7a'
+blue = '#6f8fdb'
+magenta = '#e987e9'
+cyan = '#4ac9e2'
+white = '#FFFFFF'
