@@ -1,4 +1,5 @@
 #!/bin/bash
+# World-class cozy volume notification script (full icon paths edition)
 
 STEP=5
 MAX=100
@@ -19,11 +20,13 @@ esac
 VOLUME=$(pamixer --get-volume)
 MUTED=$(pamixer --get-mute)
 
+# Clamp volume
 if [ "$VOLUME" -gt "$MAX" ]; then
   pamixer --set-volume $MAX
   VOLUME=$MAX
 fi
 
+# Icon + text logic
 if [ "$MUTED" = "true" ] || [ "$VOLUME" -eq 0 ]; then
   ICON="$ICON_DIR/volume-muted.png"
   TEXT="Muted"
@@ -41,6 +44,7 @@ else
   BAR=$VOLUME
 fi
 
+# Cozy click
 canberra-gtk-play -i audio-volume-change -d "volume" &
 
 # Notify mako

@@ -1,9 +1,9 @@
 [font]
-normal = { family = "Iosevka Nerd Font", style = "Regular" }
-bold = { family = "Iosevka Nerd Font", style = "Bold" }
-italic = { family = "Iosevka Nerd Font", style = "Italic" }
-bold_italic = { family = "Iosevka Nerd Font", style = "Bold Italic" }
-size = 25
+normal = { family = "Monospace", style = "Regular" }
+bold = { family = "Monospace", style = "Bold" }
+italic = { family = "Monospace", style = "Italic" }
+bold_italic = { family = "Monospace", style = "Bold Italic" }
+size = 20
 
 [mouse]
 hide_when_typing = true
@@ -15,30 +15,6 @@ opacity = 1
 dynamic_padding = false
 decorations = "none"
 
+
 [colors.primary]
-background = '#000000'
-foreground = '#CECECE'
-
-[colors.cursor]
-text = '#0E1415'
-cursor = '#CECECE'
-
-[colors.normal]
-black = '#0E1415'
-red = '#e25d56'
-green = '#73ca50'
-yellow = '#e9bf57'
-blue = '#4a88e4'
-magenta = '#915caf'
-cyan = '#23acdd'
-white = '#f0f0f0'
-
-[colors.bright]
-black = '#777777'
-red = '#f36868'
-green = '#88db3f'
-yellow = '#f0bf7a'
-blue = '#6f8fdb'
-magenta = '#e987e9'
-cyan = '#4ac9e2'
-white = '#FFFFFF'
+background = "#000000"

@@ -1,131 +1,103 @@
-configuration {
-    run,drun {
-        fallback-icon: "application-x-addon";
-    }
-    show-icons: true;
-}
-
 * {
-    darkbg: #161616ed; 
-    lightbg: #434c5eed;
-    tcolor: #d8dee9; 
-    font: "Open-Sans Regular 14";
+    bg:            #200906;
+    bg-alt:        #131313;
+    bg-selected:   #1C1C1C;
+
+    fg:            #aeaeae;
+    fg-dim:        #767676;
+
+    accent:        #FFFFFF;
+    blue:          #6485A6;
+    red:           #EE1B57;
+
+    border:        #1C1C1C;
+
+    font: "Monospace 13";
+
+    background-color: transparent;
+    text-color: @fg;
+
+    margin: 0;
+    padding: 0;
+    spacing: 0;
 }
 
 window {
-    width: 30%;
     location: center;
     anchor: center;
-    border-radius: 10px;
-    background-color: @darkbg;
-    text-color: @tcolor;
-    transparency: "screenshot";
+
+    width: 700px;
+
+    background-color: @bg;
     border: 1px;
-    border-color: @lightbg;
+    border-color: @border;
+    border-radius: 7px;
 }
 
-
-entry {
-    placeholder: "";
-    text-color: @tcolor;
-    font: "Open-Sans Bold 20";
-    blink: true;
-    padding: 12 15px;
-}
-
-textbox-prompt-colon {
-    enabled: false;
-}
-
-prompt {
-    enabled: false;
-}
-
-message{
-    content: "";
-    border: 0px;
-    text-color: red;
-    font: "Open-Sans Thin 12";
-}
-
-textbox {
-    text-color: inherit;
-    font:inherit;
-}
-
-listview {
-    spacing:    5px;
-    lines:      5;
-    fixed-height: true;
-    border: 0px;
-}
-
-element {
-    border-radius: 5px;
-    children: [element-icon, element-text];
-}
-
-element.normal.normal {
-    background-color: transparent;
-    text-color:       @tcolor;
-}
-element.normal.urgent {
-    background-color: transparent;
-    text-color:       @tcolor;
-}
-element.normal.active {
-    background-color: transparent;
-    text-color:       @tcolor;
-}
-element.selected.normal {
-    background-color: @lightbg;
-    text-color:       @tcolor;
-}
-element.selected.urgent {
-    background-color: @lightbg;
-    text-color:       @tcolor;
-}
-element.selected.active {
-    background-color: @lightbg;
-    text-color:       @tcolor;
-}
-element.alternate.normal {
-    background-color: transparent;
-    text-color:       @tcolor;
-}
-element.alternate.urgent {
-    background-color: transparent;
-    text-color:       @tcolor;
-}
-element.alternate.active {
-    background-color: transparent;
-    text-color:       @tcolor;
-}
-
-element-text {
-    text-color: inherit;
-    highlight: None;
-    vertical-align: 0.5;
-}
-
-element-icon {
-    enabled: true;
-    size: 40px;
-    padding: 10px 15px;
-}
-
-scrollbar {
-    handle-color: @lightbg;
+mainbox {
+    padding: 18px;
+    spacing: 14px;
+    background-color: @bg;
 }
 
 inputbar {
-    children:   [ entry,case-indicator, icon-search ];
+    background-color: @bg-alt;
+    border: 0px;
+    padding: 13px;
+    spacing: 10px;
 }
 
-icon-search {
-    expand: false;
-    filename: "searchicon_b3.svg";
-    size: 30px;
-    padding: 12.5px 17.5px;
+prompt {
+    text-color: @accent;
+    padding: 0 8px 0 0;
+}
+
+entry {
+    text-color: @fg;
+    placeholder-color: @fg-dim;
+}
+
+listview {
+    lines: 7;
+    columns: 1;
+
+    background-color: @bg;
+    fixed-height: true;
+
+    spacing: 6px;
+    margin: 13px 0 0 0;
+}
+
+element {
+    padding: 10px 13px;
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element selected.normal {
+    background-color: @bg-selected;
+    text-color: @accent;
+}
+
+element-icon {
+    size: 20px;
+    margin: 0 10px 0 0;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
     vertical-align: 0.5;
 }
+
+scrollbar {
+    width: 0px;
+}
+

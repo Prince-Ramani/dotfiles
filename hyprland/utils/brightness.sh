@@ -3,6 +3,7 @@
 STEP=5
 MIN=1
 
+# Get current brightness
 CURRENT=$(brightnessctl g)
 MAX=$(brightnessctl m)
 PERCENT=$(( CURRENT * 100 / MAX ))

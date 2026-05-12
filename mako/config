@@ -19,6 +19,8 @@ ignore-timeout=1
 group-by=app-name
 max-visible=5
 
+
+
 max-icon-size=48
 
 [urgency=low]
@@ -34,14 +36,13 @@ text-color=#ff8080
 border-color=#ff5f5f
 default-timeout=0
 
-
-
 [app-name=Brightness]
 default-timeout=700
 border-radius=17
 width=320
 padding=20
 progress-color=#6495edf6
+
 
 [app-name=Volume]
 default-timeout=700
@@ -57,11 +58,21 @@ width=320
 padding=20
 background-color=#FF5353e6
 
+
 [app-name=Battery-Full]
 border-radius=17
 width=320
 padding=20
 background-color=#00ff00e6
+anchor=center
+
+
+
+
+[app-name=Eye]
+border-radius=17
+width=400
+padding=20
 anchor=center
 
 

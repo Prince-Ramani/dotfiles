@@ -1,81 +1,84 @@
 {
-    "layer": "top",
+        "layer": "top",
         "position": "top",
         "height": 30,
-        "modules-left": ["hyprland/workspaces", ],
-        "modules-center": ["clock"],
-        "modules-right": ["battery","network","cpu", "memory","pulseaudio" ],
-
+        "modules-left": [
+                "hyprland/workspaces"
+        ],
+        "modules-center": [
+                "clock"
+        ],
+        "modules-right": [
+                "battery",
+                "network",
+                "cpu",
+                "memory",
+                "pulseaudio"
+        ],
         "workspaces": {
-            "format": "{name}",
-            "disable-scroll": true
+                "format": "{name}",
+                "disable-scroll": true
         },
-
         "cpu": {
-            "format": "  {usage}%",
-            "format-alt": "CPU: {usage}%",
-            "max-length": 10,
-            "internal" : 5
+                "format": "  {usage}%",
+                "format-alt": "CPU: {usage}%",
+                "max-length": 10,
+                "internal": 5
         },
-
         "memory": {
-            "format": "🌱 {used}/{total}GB",
-            "format-alt": "RAM: {used}/{total}GB",
-            "internal" : 10
+                "format": "🌱 {used}/{total}GB",
+                "format-alt": "RAM: {used}/{total}GB",
+                "internal": 10
         },
-
         "pulseaudio": {
-            "format": "  {volume}%",
-            "format-muted": "🔇 <span foreground='red'>muted</span>",
-            "internal" : 0
+                "format": "  {volume}%",
+                "format-muted": "🔇 <span foreground='red'>muted</span>",
+                "internal": 0
         },
-
         "battery": {
-            "format": "{capacity}% {time} {icon}",
-            "format-icons": {
-                "charging": [
-                    "󰢜",
-                "󰂆",
-                "󰂇",
-                "󰂈",
-                "󰢝",
-                "󰂉",
-                "󰢞",
-                "󰂊",
-                "󰂋",
-                "󰂅"
-                ],
-                "default": [
-                    "󰁺",
-                "󰁻",
-                "󰁼",
-                "󰁽",
-                "󰁾",
-                "󰁿",
-                "󰂀",
-                "󰂁",
-                "󰂂",
-                "󰁹"
-                ]
-            },
-            "format-full": "Charged ",
-            "interval": 30,
-            "states": {
-                "warning": 20,
-                "critical": 10
-            },
-            "tooltip": false
+                "format": "{capacity}% {time} {icon}",
+                "format-icons": {
+                        "charging": [
+                                "󰢜",
+                                "󰂆",
+                                "󰂇",
+                                "󰂈",
+                                "󰢝",
+                                "󰂉",
+                                "󰢞",
+                                "󰂊",
+                                "󰂋",
+                                "󰂅"
+                        ],
+                        "default": [
+                                "󰁺",
+                                "󰁻",
+                                "󰁼",
+                                "󰁽",
+                                "󰁾",
+                                "󰁿",
+                                "󰂀",
+                                "󰂁",
+                                "󰂂",
+                                "󰁹"
+                        ]
+                },
+                "format-full": "Charged ",
+                "interval": 30,
+                "states": {
+                        "warning": 20,
+                        "critical": 10
+                },
+                "tooltip": false
         },
-
         "network": {
-            "interval": 10,
-            "format-wifi": "󰤨  {essid} | {signalStrength}% | <span foreground='lightgreen'>{ipaddr}</span>",
-            "format-ethernet": "󰈀  Wired  <span foreground='lightgreen'>{ipaddr}</span>",
-            "format-disconnected": "<span foreground='#f38ba8'>󰤭  Offline</span>"
+                "interval": 10,
+                "format-wifi": "󰤨  {essid} | {signalStrength}%",
+                "format-ethernet": "󰈀  Wired",
+                "format-disconnected": "<span foreground='#f38ba8'>󰤭  Offline</span>"
         },
-
         "clock": {
-            "format": "🕰 {:%H:%M 🎐 %d %b %Y}",
-            "internal" : 60
-        } 
+                "format": "🕰 {:%H:%M 🎐 %d %b %Y}",
+                "internal": 60
+        }
 }
